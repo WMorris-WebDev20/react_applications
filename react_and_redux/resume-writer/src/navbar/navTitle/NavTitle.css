@@ -1,0 +1,29 @@
+.nav-title {
+    padding: .5rem 10vw ;
+    float: left;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;     
+    color: rgb(223, 219, 213);
+}
+
+@media screen and (max-width: 600px) {
+    .nav-title {
+        position: absolute;
+        top: .25rem;
+        left: .25rem;
+        float: none;
+        padding: .75rem 0;
+        font-size: 1.5rem;        
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-title {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: .5rem 0 0;
+        text-align: center;
+        margin-right: 5rem;
+    }
+}

@@ -1,0 +1,27 @@
+footer{
+    grid-column: 1/-1;
+    grid-row: 3;   
+    background-color: rgba(218, 182, 25, 0.795);
+    box-shadow: 2px 2px 8px 2px rgb(59, 59, 0) ;
+    padding: 3% 0;   
+    margin: 3vh 0 0;
+    text-align: center;    
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+}
+.footer{    
+    font-size: 1.75rem;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .footer{    
+        font-size: 1rem;
+        text-align: center;
+    }
+} 
+ 

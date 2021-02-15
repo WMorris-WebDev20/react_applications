@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    font-size: 1.5rem;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Roboto', sans-serif;
+}
+#root{
+    height: 100vh;
+}
+p{
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin: 0 auto;
+}
+form {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 1.5rem;
+    margin: .5rem;
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+}
+button{
+    border-radius: 5px;
+    padding: .25rem;
+    margin: 1vh .5rem;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    background-color: rgb(161, 159, 159);
+}
+i:hover{
+    cursor: pointer;
+}
+.App{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    min-height: 100%;
+    grid-template-rows: auto  auto 1fr auto;
+}
+.main{
+    grid-column: 1/-1;
+    grid-row: 2;
+    margin: 3vh auto;
+}
+.contact-btn{
+    font-size: 1.15rem;
+    background-color: rgba(161, 159, 159, 0.603);
+    padding: .5rem;
+}
+.contact-header{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-header > span{
+    padding: 1vh 5vh;
+    font-family: 'Londrina Solid', cursive;
+}
+.contact-div{
+    grid-column: 1/-1;
+    margin: 0 auto;
+    background-color: rgb(255,255,136);
+    box-shadow: 1px 1px 8px 1px rgb(97, 97, 0);
+}
+.contact-list{
+    margin: 2vh 3vh;    
+    border-bottom:1px solid black;
+    font-family: 'Permanent Marker', cursive;
+}
+.contact-list > p{
+    display: inline-block;
+    margin: 1vh;
+}
+.redo-icon{
+    color: blue;
+}
+.trash-icon{
+    color: red;
+}
+.tip{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgb(77, 76, 76);
+    font-size: .75rem;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .root{
+        display: flex;
+        flex-direction: column;
+    }
+    .App{
+        grid-template-columns: repeat(1, 1fr);      
+        min-height: 100%;
+        width: 100%;
+    }
+    form{
+        width: 90%;
+    }
+    input{
+        width: 90%;
+        font-size: 1rem;
+        margin: 1vh;
+    }
+    button{
+        font-size: 1rem;
+    }
+    i{
+        margin-left: auto;
+        font-size: 1rem;
+    }
+    .contact-div{        
+        margin: 0;
+    }
+    .contact-header > span{
+        padding: .5rem;
+        font-size: 1.15rem;
+    }
+    .contact-list{
+        border-bottom: 2px solid grey;
+        margin: 2vh 2vh;
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (min-width: 501px) and (max-width: 768px){
+    .root{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+    input{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    .contact-div{        
+        margin: 0 .5rem;
+    }
+    .contact-list > p{
+        margin: 0 .5rem;
+        font-size: 1.15rem;
+    }
+    .contact-header > span{
+        padding: .5rem;
+        font-size: 1.15rem;
+    }  
+
+}

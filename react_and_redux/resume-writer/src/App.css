@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    font-size: 1.5rem;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Roboto', sans-serif;
+}
+#root{
+    height: 100vh;
+}
+.App{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);    
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+.main{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: auto;
+    padding: .5rem;
+    margin: 2vh;
+    border-radius: 15px;   
+    background-color: rgba(48, 54, 65, 0.815);     
+    box-shadow: inset 3px 3px 20px 3px rgba(138, 137, 137, 0.568),
+    1px 1px 1px 1px rgba(87, 87, 87, 0.842),
+    -1px -1px 1px 1px rgba(87, 87, 87, 0.842),
+    inset -3px -3px 20px 3px rgba(48, 54, 65, 0.815);     
+    color: rgb(213, 219, 223); 
+    text-shadow: 2px 2px rgb(58, 56, 53) ;
+}
+form,input, .form-btn{
+    border-radius: 5px;
+    margin: .25rem;
+}
+input{
+    font-size: 1.5rem;
+    padding: .25rem;
+}
+option{
+    font-size: 1.15rem;
+}
+address{
+    margin: 2vh;
+    border-bottom: 3px solid grey;
+
+}
+address > h1,p{
+    text-align: left;
+    margin: 0 3vh;
+}
+address > h1{
+    font-size: 2rem;
+}
+h1{
+    text-align: center;
+}
+.main{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+.main > h1{
+    font-size: 3rem;
+    margin-top: 2vh;
+    font-family: 'Londrina Solid', cursive;
+}
+.main> h1 > span{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Londrina Solid', cursive;
+}
+.main > h3,h2 {
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    margin: 1vh;
+}
+.delete-icon{
+    color: red;
+}
+.undo-icon{
+    color: blue;
+}
+.resume-div{
+    display: flex;
+    flex-direction: column;
+}
+.resume-div > h1{
+    font-size: 3rem;
+    font-family: 'Londrina Solid', cursive;
+
+}
+.resume-list{
+    border-bottom: 1px solid grey;
+}
+.collection-list > p>span{
+    margin: 0 2vh 0 0;
+}
+.collection-list {
+    margin: 2vh 0;
+}
+.main-form > input, textarea{
+    width: 25rem;
+    border: 1px solid grey;
+}
+.main-form {
+   margin: 0 auto;
+}
+.date{
+    width: 25rem;
+}
+.smile-icon{
+    margin-left: 1rem;
+    font-size: 2.5rem;
+
+}
+.collection-header > h1{
+    font-size: 2.5rem;
+    font-family: 'Londrina Solid', cursive;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    form,input, .form-btn{
+        border-radius: 5px;
+        margin: .25rem;
+    }
+    input{
+        font-size: 1rem;
+        padding: .25rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .main > h1{
+        font-size: 1.5rem;
+    }
+    .main > h2{
+        font-size: 1.15rem;
+    }
+    .smile-icon{
+        font-size: 1.5rem;
+    }
+    .collection-header > h1 {
+        font-size: 2rem;
+    }
+    p , span{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .main-form > input, textarea{
+        width: 100vw;
+    }
+    .main-form {
+       margin: 0 auto;
+    }
+    .date{
+        width: 100vw;
+    }
+    .resume-div > h1{
+        font-size: 2rem;    
+    }
+    
+}

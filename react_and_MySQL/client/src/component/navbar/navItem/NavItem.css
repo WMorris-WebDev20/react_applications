@@ -1,0 +1,40 @@
+.nav-item:hover {
+    color: rgb(102, 115, 116);
+}
+.nav-item:visited{
+    text-decoration: none;    
+}
+a{
+    text-decoration: none;   
+    cursor: pointer;
+}
+a:visited{
+    color: rgb(228, 222, 222);
+}
+.nav-item{
+    color: rgb(230, 180, 88);
+    text-shadow: 2px 2px black;
+    font-style: bold;
+    font-weight: 600;
+    padding-top: 10vh;
+}
+@media screen and (max-width: 600px) {
+    .nav-item{
+        font-size: 1.15rem;
+        padding-top: 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .nav-item{
+        font-size: 1.5rem;
+        padding-top: 0;
+        
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-item{
+        font-size: 1.15rem;
+        padding: 0;
+        
+    }
+}

@@ -1,0 +1,21 @@
+.nav-item:hover {
+    color: rgb(102, 115, 116);
+}
+.nav-item:visited{
+    text-decoration: none;    
+}
+a{
+    text-decoration: none;   
+    cursor: pointer;
+}
+a:visited{
+    color: rgb(228, 222, 222);
+}
+.nav-item{     
+    color: rgb(223, 219, 213);
+}
+@media screen and (max-width: 600px) {
+    .nav-item{
+        font-size: 1.15rem;
+    }
+}
